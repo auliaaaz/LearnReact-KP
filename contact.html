@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <h2>Contact Us</h2>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
     <body> 
-    <form>
-    <fieldset>
-    <label for="fullname">Full Name:</label><br>
-    <input type="text" id="fullname" name="fullname" required><br>
-    <label for="email">E-Mail:</label><br>
-    <input type="email" id="email" name="email" required><br>
-    <label for="phone">Phone Number:</label><br>
-    <input type="text" id="phone" pattern="{0-9}{1, 13}" maxlength="13" title="Number Only" required><br>
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" cols="30" required>Insert your message</textarea><br>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-    </fieldset>
-    </form><br><br>
+        <main>
+            <header>
+                <h2>Contact Us</h2>
+            </header>
+        
 
-    <table>
-        <legend><b>Personal Information</b></legend>
-        <tr>
-            <td>Name</td>
-            <td>Aulia Syahnur</td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>saulia479@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Phone Number</td>
-            <td>6282123456789</td>
-        </tr>
-    </table><br>
+            <form>
+            <fieldset>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" pattern="{0-9}{1, 13}" maxlength="13" title="Number Only" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+                <div class="button-submit">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </fieldset>
+            </form>
+
+            <div class="personal-info">
+                <h4>Personal Information</h4>
+            </div>
+
+            <div class="grid-container-personal-info">
+                <div class="grid-item">Name:</div>
+                <div class="grid-item">Aulia Syahnur |</div>
+                <div class="grid-item">Email:</div>
+                <div class="grid-item">saulia479@gmail.com |</div>
+                <div class="grid-item">Phone Number:</div>
+                <div class="grid-item">6282376787113</div>
+            </div>
+        </main><br><br>
 
     <footer>
-    <i>Ver: 1. 0. 0</i>
+    <i>Ver: 2. 0. 0</i>
     </footer>
     </body>   
+
 </html>
