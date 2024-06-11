@@ -4,49 +4,83 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Us</title>
+        <link rel="stylesheet" href="asset/bootstrap.min.css">
+        <script src="asset/bootstrap.min.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body> 
         <main>
-            <header>
-                <h2>Contact Us</h2>
-            </header>
-        
-
-            <form>
-            <fieldset>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" pattern="{0-9}{1, 13}" maxlength="13" title="Number Only" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
-                <div class="button-submit">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-pills justify-content-end">
+                            <li class="nav-item">
+                              <a class="nav-link" href="about_me.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                            </li>
+                          </ul>
+                    </div>
                 </div>
-            </fieldset>
-            </form>
-
-            <div class="personal-info">
-                <h4>Personal Information</h4>
             </div>
 
-            <div class="grid-container-personal-info">
-                <div class="grid-item">Name:</div>
-                <div class="grid-item">Aulia Syahnur |</div>
-                <div class="grid-item">Email:</div>
-                <div class="grid-item">saulia479@gmail.com |</div>
-                <div class="grid-item">Phone Number:</div>
-                <div class="grid-item">6282376787113</div>
+            <div class="container text-center p-5">
+                <section class="col">
+                    <header>
+                        <h2><b>Get in Touch</b></h2>
+                    </header>
+                </section>
+                <section class="col">
+                    <form>
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phonenum" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phonenum" pattern="{0-9}{1, 13}" maxlength="13" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="messages" class="form-label">Message</label>
+                        <textarea class="form-control" id="messages" rows="3"></textarea>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <input class="btn btn-primary" type="reset" value="Reset">
+                    </form>
+                </section>
+
+                <section class="col p-5">
+                    <div class="personal-info">
+                        <b>Personal Information</b> 
+                    </div>
+        
+                    <div class="grid-container-personal-info">
+                        <div class="grid-item">Name:</div>
+                        <div class="grid-item">Aulia Syahnur |</div>
+                        <div class="grid-item">Email:</div>
+                        <div class="grid-item">saulia479@gmail.com |</div>
+                        <div class="grid-item">Phone Number:</div>
+                        <div class="grid-item">6282376787113</div>
+                    </div>
+                </section>
             </div>
-        </main><br><br>
+            
+        </main>
 
     <footer>
-    <i>Ver: 2. 0. 0</i>
+    <i>Ver: 3. 0. 0</i>
     </footer>
     </body>   
 
