@@ -2,27 +2,48 @@
 <html lang="en">
 <head>
     <title>About Me</title>
+    <link rel="stylesheet" href="asset/bootstrap.min.css">
+    <script src="asset/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <main>
-        <header>
-            <h2>About Me</h2>
-        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-pills justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="about_me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
 
-        <section>
-            <p>
-                <b>Hi!</b>
-                <br>I am Aulia, a fresh graduate actively seeking a position in Data Science or a Data Analysis-related field.
-                I am deeply passionate about learning new things and continuously expanding my knowledge. Currently, I am diving into the fundamentals of front-end web development.                
-            </p>
-        </section>
-
-        <section class="profile">
-            <img src="asset/photo.JPG" alt="Profile Photo" class="profile-photo">
-        </section>
-
+        <div class="container text-center p-5">
+            <section class="col">
+                <img src="asset/photo.JPG" alt="Profile Photo" class="profile-photo">
+            </section>
+            <section class="col p-2">
+                <p>
+                    <b>Hi!</b>
+                    <br>I am Aulia, a fresh graduate from Mathematics Major who actively seeking a position in Data Science or a Data Analysis-related field.
+                    I am deeply passionate about learning new things and continuously expanding my knowledge. Currently, I am diving into the fundamentals of front-end web development.                
+                </p>
+            </section>
+        </div>
+        
+        <div class="container text-center">
         <aside class="social-links">
             <a href="https://www.linkedin.com/in/andiauliasyahnur/">
                 <img src="asset/linkedin_icon.png" alt="LinkedIn profile page">
@@ -31,10 +52,11 @@
                 <img src="asset/github_icon.jpg" alt="GitHub profile page">
             </a>
         </aside>
+        </div>
     </main><br>
     
     <footer>
-        <i>Ver: 2. 0. 0</i>
+        <i>Ver: 3. 0. 0</i>
     </footer>
 </body>
 </html>

@@ -7,17 +7,23 @@ body {
     text-align: center;
 }
 
+.nav-pills .nav-link {
+    color: #e4e4e4;
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .nav-link:hover {
+    background-color: hsl(200, 100%, 77%);
+    color: #090808;
+}
+
 main {
     padding: 20px;
 }
 
 header {
     margin-bottom: 20px;
-}
-
-header h2 {
-    font-size: 2.5rem;
-    color: #e4e4e4;
+    color: #fbfbfb;
 }
 
 .profile {
@@ -26,8 +32,9 @@ header h2 {
 
 .profile-photo {
     border-radius: 50%;
-    width: 90px;
-    height: 85px;
+    width: 120px;
+    height: 115px;
+    text-align: center;
 }
 
 .social-links {
@@ -67,33 +74,12 @@ form {
     margin: auto;
 }
 
-fieldset {
-    border: none;
-    text-align: left;
-}
-
 label {
-    display: block;
-    margin: 10px 0 5px;
     color: #000;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 500px;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-textarea {
-    width: calc(100%-20px);
-    resize: none;
-}
-
-.form-button{
+/*
+.form-button {
     text-align: center;
     margin-top: 10px;
 }
@@ -114,6 +100,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: #0056b3;
 }
+*/
 
 .grid-container-personal-info {
     max-width: fit-content;
@@ -124,44 +111,3 @@ input[type="reset"]:hover {
     grid-template-rows: 1fr 1fr;
     gap: 5px;
 }
-
-@media (max-width: 768px) {
-    header h2 {
-        font-size: 2rem;
-    }
-
-    .profile-photo {
-        width: 80px;
-        height: 75px;
-    }
-
-    .social-links img {
-        width: 30px;
-        height: 30px;
-    }
-
-    footer i {
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header h2 {
-        font-size: 1.8rem;
-    }
-
-    .profile-photo {
-        width: 60px;
-        height: 55px;
-    }
-
-    .social-links img {
-        width: 18px;
-        height: 18px;
-    }
-
-    footer i {
-        font-size: 0.6rem;
-    }
-}
-
