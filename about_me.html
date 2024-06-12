@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body onload="get_current_date()">
+    <script src="script.js"></script>
     <main>
         <div class="container-fluid">
-            <div class="row">
                 <div class="col-md-12">
                     <ul class="nav nav-pills justify-content-end">
                         <li class="nav-item">
@@ -26,7 +26,9 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                       </ul>
-                </div>
+            </div>
+            <div class="col-md-3">
+                <span id="date"></span>
             </div>
         </div>
 
@@ -35,10 +37,20 @@
                 <img src="asset/photo.JPG" alt="Profile Photo" class="profile-photo">
             </section>
             <section class="col p-2">
-                <p>
+                <p class="content_color">
                     <b>Hi!</b>
                     <br>I am Aulia, a fresh graduate from Mathematics Major who actively seeking a position in Data Science or a Data Analysis-related field.
                     I am deeply passionate about learning new things and continuously expanding my knowledge. Currently, I am diving into the fundamentals of front-end web development.                
+                </p>
+            </section>
+            <section class="col tempstuff" >
+                <p id="temp_converter" onmouseover="change_text_color()" class="colortemp"><b>Temperatur Converter (F -> C)</b></p>
+                <p>
+                    <label class="colortemp">Fahrenheit: </label>
+                    <input id="input_fahrenheit" type="number" oninput="temp_converter(this.value)">
+                </p>
+                <p class="colortemp">
+                    Celcius: <span class="colortemp" id="output_celcius"></span>
                 </p>
             </section>
         </div>
@@ -56,7 +68,7 @@
     </main><br>
     
     <footer>
-        <i>Ver: 3. 0. 0</i>
+        <i>Ver: 4. 0. 0</i>
     </footer>
 </body>
 </html>
