@@ -1,6 +1,7 @@
 # Quick Note & Task Manager
 
 Quick Note & Task Manager is a web application that allows users to manage sticky notes and to-do lists efficiently. Users can create, search, and delete notes and to-do items. Additionally, the application prompts users with a confirmation dialog when they try to navigate away from the page without saving their data.
+Link to the app <https://learn-react-kp-e24m-jqxkzhpo5-aulias-projects-9b061aa2.vercel.app/>
 
 ## Usage
 
