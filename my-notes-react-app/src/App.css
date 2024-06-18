@@ -1,0 +1,243 @@
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.Title {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.list-notes {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.new-note {
+  background-color: rgb(125, 204, 243);
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: rgb(125, 204, 243);
+  color: #050505;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.save-note {
+  background-color: rgb(7, 7, 7);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save-note:hover{
+  background-color: rgb(60, 61, 61);
+  cursor: pointer;
+}
+
+.note {
+  background-color: rgb(251, 179, 212);
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-delete {
+  cursor: pointer;
+}
+
+.icon-delete:hover{
+  color: rgb(196, 3, 3);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal_box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal_box p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.modal_buttonCancel,
+.modal_buttonDelete {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.modal_buttonCancel {
+  background: #ccc;
+  color: black;
+}
+
+.modal_buttonDelete {
+  background: red;
+  color: white;
+}
+
+.pTodo {
+  margin-top: 4em;
+}
+
+.forms {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.formInput {
+  background-color: #bfbfbf;
+  padding: 10px;
+  border-radius: 10px;
+  flex: 1; 
+  border: none;
+}
+
+.formInput:focus {
+  outline: none;
+}
+
+.formInput[type=text] {
+  color: rgb(3, 3, 3);
+}
+
+.formButton {
+  background-color: black;
+  color: #fffbfb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer; 
+}
+
+.formButton:hover{
+  background-color: rgb(60, 61, 61);
+  cursor: pointer;
+}
+
+.olist {
+  vertical-align: middle;
+}
+
+.checkBox {
+  height: 20px;
+  width: 20px;
+  background-color: #050505;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.lists {
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+.buttonDelete {
+  background-color: black;
+  color: #fffbfb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer; 
+  margin-left: 1rem;
+}
+
+.buttonDelete:hover{
+  background-color: rgb(60, 61, 61);
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #bfbfbf;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 4em;
+}
+
+.search input {
+  border: none;
+  background-color: #bfbfbf;
+  color: #050505;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.buttonSubmit {
+  background-color: black;
+  color: #fffbfb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer; 
+  margin-right: 1 em;
+}
+
+.buttonSubmit:hover{
+  background-color: rgb(60, 61, 61);
+  cursor: pointer;
+}
+
+.buttonReset {
+  background-color: black;
+  color: #fffbfb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer; 
+  margin-right: 1 em;
+}
+
+.buttonReset:hover{
+  background-color: rgb(60, 61, 61);
+  cursor: pointer;
+}
